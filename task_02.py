@@ -1,5 +1,3 @@
-
-
 def coincidence(my_list=None, my_range=None):
     if my_list and my_range:
         my_ls = []

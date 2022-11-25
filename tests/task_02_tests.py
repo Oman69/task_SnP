@@ -22,6 +22,5 @@ class TaskTest(TestCase):
         self.assertEqual(coincidence([1, 4, 6], range(7, 123)), [])
 
 
-
 if __name__ == '__main__':
     main()

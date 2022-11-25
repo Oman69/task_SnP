@@ -9,5 +9,6 @@ def combine_anagrams(input_array):
             matrix.append(row)
     return matrix
 
+
 print(combine_anagrams(["cars", "for", "potatoes", "racs", "four", "scar", "creams", "scream"]))
 print(combine_anagrams(["топот", "потоп", "potatoes", "racs", "four", "scar", "creams", "scream"]))

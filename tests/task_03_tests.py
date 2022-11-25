@@ -17,3 +17,7 @@ class TaskTest(TestCase):
 
     def test_5(self):
         self.assertEqual(max_odd([2, 2, 4]), None)
+
+
+if __name__ == '__main__':
+    main()

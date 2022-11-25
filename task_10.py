@@ -1,5 +1,6 @@
 import string
 
+
 def count_words(my_str):
     my_str = my_str.lower().split()
     ls = []

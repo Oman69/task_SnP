@@ -2,7 +2,6 @@ from unittest import TestCase, main
 from ..task_06 import rps_game_winner, WrongNumberOfPlayersError, NoSuchStrategyError
 
 
-
 class TaskTest(TestCase):
     def test_1(self):
         self.assertEqual(rps_game_winner([['player1', 'P'], ['player2', 'S']]), 'player2 S')
@@ -24,6 +23,7 @@ class TaskTest(TestCase):
 
     def test_7(self):
         self.assertRaises(WrongNumberOfPlayersError, rps_game_winner)
+
 
 if __name__ == '__main__':
     main()

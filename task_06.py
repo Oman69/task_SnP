@@ -1,14 +1,17 @@
 class WrongNumberOfPlayersError(Exception):
     pass
 
+
 class NoSuchStrategyError(Exception):
     pass
+
 
 def rps_game_winner(players=None):
     if not players or len(players) != 2:
         raise WrongNumberOfPlayersError
 
-    my_dict = {('R', 'P'): 'player2', ('P', 'R'): 'player1', ('R', 'S'): 'player1', ('S', 'R'): 'player2', ('S', 'P'): 'player1', ('P', 'S'): 'player2'}
+    my_dict = {('R', 'P'): 'player2', ('P', 'R'): 'player1', ('R', 'S'): 'player1', ('S', 'R'): 'player2',
+               ('S', 'P'): 'player1', ('P', 'S'): 'player2'}
 
     for item in players:
         if item[1] not in ('R', 'P', 'S'):

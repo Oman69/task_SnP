@@ -2,7 +2,6 @@ from unittest import TestCase, main
 from ..task_08 import multiply_numbers
 
 
-
 class TaskTest(TestCase):
     def test_1(self):
         self.assertEqual(multiply_numbers('1234'), 24)

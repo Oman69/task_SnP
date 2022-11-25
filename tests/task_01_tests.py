@@ -25,6 +25,5 @@ class TaskTest(TestCase):
         self.assertEqual(is_palindrome("/ТоПоТ..."), True)
 
 
-
 if __name__ == '__main__':
     main()

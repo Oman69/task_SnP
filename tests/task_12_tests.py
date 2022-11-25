@@ -1,8 +1,9 @@
 from unittest import TestCase, main
-from ..task_11 import Desert, Food
+from ..task_12 import Desert, Food, JellyBean
 
 obj1 = Desert()
 obj2 = Food()
+obj3 = JellyBean()
 
 
 class TaskTest(TestCase):
@@ -16,7 +17,20 @@ class TaskTest(TestCase):
         obj1.calories = 220
         self.assertEqual(obj1.is_healthy, False)
 
+    def test_4(self):
+        obj3.flavor = 'Lime'
+        self.assertEqual(obj3.flavor, 'Lime')
+
+    def test_5(self):
+        obj3.flavor = 'black licorice'
+        self.assertEqual(obj3.is_delicious, False)
+
+    def test_6(self):
+        obj3.calories = 300
+        self.assertEqual(obj3.is_healthy, False)
+
 
 if __name__ == '__main__':
     main()
+
 

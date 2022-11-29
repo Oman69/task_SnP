@@ -2,7 +2,7 @@ class Food:
     pass
 
 
-class Desert:
+class Dessert:
     def __init__(self, name=None, calories=0):
         self._name = name
         self._calories = calories
@@ -32,5 +32,5 @@ class Desert:
 
     @property
     def is_delicious(self):
-        if isinstance(self, Desert):
+        if isinstance(self, Dessert):
             return True

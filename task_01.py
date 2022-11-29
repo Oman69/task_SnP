@@ -12,5 +12,5 @@ def clear_string(my_str):
 
 def is_palindrome(my_str):
     my_str = clear_string(my_str)
-    return string == string[::-1]
+    return my_str == my_str[::-1]
 

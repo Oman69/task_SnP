@@ -16,6 +16,13 @@ class TaskTest(TestCase):
         obj1.calories = 220
         self.assertEqual(obj1.is_healthy, False)
 
+    def test_4(self):
+        obj1.calories = '100'
+        self.assertEqual(obj1.calories, 100)
+
+    def test_5(self):
+        obj1.calories = 'abracadabra'
+        self.assertEqual(obj1.calories, 100)
 
 if __name__ == '__main__':
     main()

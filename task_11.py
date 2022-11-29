@@ -21,7 +21,10 @@ class Dessert:
 
     @calories.setter
     def calories(self, value):
-        self._calories = value
+        if isinstance(value, (int, float)):
+            self._calories = value
+        elif value.isdigit():
+            self._calories = int(value)
 
     @property
     def is_healthy(self):

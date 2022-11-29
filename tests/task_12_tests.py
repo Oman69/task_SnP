@@ -1,8 +1,8 @@
 from unittest import TestCase, main
-from ..task_12 import Dessert, Food, JellyBean
+from ..task_11 import Dessert
+from ..task_12 import JellyBean
 
 obj1 = Dessert()
-obj2 = Food()
 obj3 = JellyBean()
 
 

@@ -1,38 +1,4 @@
-class Food:
-    pass
-
-class Dessert:
-    def __init__(self, name=None, calories=0):
-        self._name = name
-        self._calories = calories
-
-    @property
-    def name(self):
-        return self._name
-
-    @name.setter
-    def name(self, value):
-        self._name = value
-
-    @property
-    def calories(self):
-        return self._calories
-
-    @calories.setter
-    def calories(self, value):
-        self._calories = value
-
-    @property
-    def is_healthy(self):
-        if self._calories < 200:
-            return True
-        else:
-            return False
-
-    @property
-    def is_delicious(self):
-        if isinstance(self, Dessert):
-            return True
+from task_11 import Dessert
 
 
 class JellyBean(Dessert):
@@ -52,3 +18,13 @@ class JellyBean(Dessert):
     def is_delicious(self):
         if self.flavor == 'black licorice':
             return False
+        else:
+            return True
+
+
+
+obj3 = JellyBean()
+obj3.flavor = '200'
+print(obj3.is_delicious)
+obj3.flavor = 'black licorice'
+print(obj3.is_delicious)

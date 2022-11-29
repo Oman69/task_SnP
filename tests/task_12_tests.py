@@ -1,6 +1,5 @@
 from unittest import TestCase, main
-from ..task_11 import Dessert
-from ..task_12 import JellyBean
+from ..task_12 import Dessert, JellyBean
 
 obj1 = Dessert()
 obj3 = JellyBean()
